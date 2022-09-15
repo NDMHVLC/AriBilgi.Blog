@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AriBilgi.Blog.Entities/1.0.0": {
+        "dependencies": {
+          "AriBilgi.Blog.Shared": "1.0.0"
+        },
+        "runtime": {
+          "AriBilgi.Blog.Entities.dll": {}
+        }
+      },
+      "AriBilgi.Blog.Shared/1.0.0": {
+        "runtime": {
+          "AriBilgi.Blog.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AriBilgi.Blog.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AriBilgi.Blog.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

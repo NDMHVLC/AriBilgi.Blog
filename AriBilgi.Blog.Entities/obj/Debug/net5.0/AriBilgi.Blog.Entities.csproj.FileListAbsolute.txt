@@ -1,0 +1,15 @@
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\bin\Debug\net5.0\AriBilgi.Blog.Entities.deps.json
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\bin\Debug\net5.0\AriBilgi.Blog.Entities.dll
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\bin\Debug\net5.0\AriBilgi.Blog.Entities.pdb
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\bin\Debug\net5.0\AriBilgi.Blog.Shared.dll
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\bin\Debug\net5.0\AriBilgi.Blog.Shared.pdb
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\obj\Debug\net5.0\AriBilgi.Blog.Entities.csproj.AssemblyReference.cache
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\obj\Debug\net5.0\AriBilgi.Blog.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\obj\Debug\net5.0\AriBilgi.Blog.Entities.AssemblyInfoInputs.cache
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\obj\Debug\net5.0\AriBilgi.Blog.Entities.AssemblyInfo.cs
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\obj\Debug\net5.0\AriBilgi.Blog.Entities.csproj.CoreCompileInputs.cache
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\obj\Debug\net5.0\AriBilgi.Blog.Entities.csproj.CopyComplete
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\obj\Debug\net5.0\AriBilgi.Blog.Entities.dll
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\obj\Debug\net5.0\refint\AriBilgi.Blog.Entities.dll
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\obj\Debug\net5.0\AriBilgi.Blog.Entities.pdb
+C:\Users\havla\OneDrive\Desktop\AriBilgi\AriBilgi.Blog\AriBilgi.Blog.Entities\obj\Debug\net5.0\ref\AriBilgi.Blog.Entities.dll

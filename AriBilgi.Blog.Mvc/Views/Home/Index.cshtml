@@ -1,0 +1,74 @@
+﻿
+@{
+    Layout = "~/views/Shared/_Layout.cshtml";
+}
+
+<div class="row mt-4" ng-app="homeapp" ng-controller="homeController">
+    <div class="col-4">
+        <h3>Kullanıcılar Listesi</h3>
+        <table class="table table-sm table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Ad Soyad</th>
+                    <th>Role</th>
+                    <th>Makale</th>
+                    <th>Yorum</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in UserList">
+                    <td>{{user.name}} {{user.surname}}</td>
+                    <td>{{user.userRoleId}}</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="col-4">
+        <h3>Kategoriler Listesi</h3>
+        <table class="table table-sm table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Başlık</th>
+                    <th>İçerik</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="category in CategoryList">
+                    <td>{{category.title}}</td>
+                    <td>{{category.content}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="col-4">
+        <h3>Makaleler Listesi</h3>
+        <table class="table table-sm table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Başlık</th>
+                <th>İçerik</th>
+                <th>Kategori</th>
+                <th>Kullanıcı</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="article in ArticleList">
+                <td>{{article.title}}</td>
+                <td>{{article.content}}</td>
+                <td>{{article.categoryId}}</td>
+                <td>{{article.userId}}</td>
+            </tr>
+        </tbody>
+        </table>
+
+    </div>
+    
+</div>
+
+@section scripts{
+    <script src="~/js/pages/home.js"></script>
+}
