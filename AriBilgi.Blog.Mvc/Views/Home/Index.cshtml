@@ -6,6 +6,7 @@
 <div class="row mt-4" ng-app="homeapp" ng-controller="homeController">
     <div class="col-4">
         <h3>Kullanıcılar Listesi</h3>
+        <a href="~/User/Add" class="btn btn-sm btn-primary mt-1 mb-3">Kullanıcı Ekle</a>
         <table class="table table-sm table-hover table-bordered">
             <thead>
                 <tr>
@@ -28,17 +29,18 @@
     </div>
     <div class="col-4">
         <h3>Kategoriler Listesi</h3>
+        <a href="~/Category/Add" class="btn btn-sm btn-primary mt-1 mb-3">Kategori Ekle</a>
         <table class="table table-sm table-hover table-bordered">
             <thead>
                 <tr>
                     <th>Başlık</th>
-                    <th>İçerik</th>
+                    <th>Makale</th>
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="category in CategoryList">
-                    <td>{{category.title}}</td>
-                    <td>{{category.content}}</td>
+                    <td>{{category.name}}</td>
+                    <td>{{category.articleCount}}</td>
                 </tr>
             </tbody>
         </table>
@@ -46,21 +48,20 @@
     </div>
     <div class="col-4">
         <h3>Makaleler Listesi</h3>
+        <a href="~/Article/Add" class="btn btn-sm btn-primary mt-1 mb-3">Makale Ekle</a>
         <table class="table table-sm table-hover table-bordered">
         <thead>
             <tr>
                 <th>Başlık</th>
-                <th>İçerik</th>
-                <th>Kategori</th>
-                <th>Kullanıcı</th>
+                <th>Kategori Adı</th>
+                <th>Yorum Sayısı</th>
             </tr>
         </thead>
         <tbody>
             <tr ng-repeat="article in ArticleList">
                 <td>{{article.title}}</td>
-                <td>{{article.content}}</td>
-                <td>{{article.categoryId}}</td>
-                <td>{{article.userId}}</td>
+                <td>{{article.categoryName}}</td>
+                <td>{{article.commentCount}}</td>
             </tr>
         </tbody>
         </table>

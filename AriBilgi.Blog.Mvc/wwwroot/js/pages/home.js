@@ -11,7 +11,7 @@ app.controller("homeController", function ($scope, $http) {
     $scope.GetUserList = function () {
         $http({
             method: "POST",
-            url: "Home/GetUserList",
+            url: "/Home/GetUserList",
 
         }).then(function (d) {
             $scope.UserList = d.data;
@@ -21,7 +21,7 @@ app.controller("homeController", function ($scope, $http) {
     $scope.GetCategoryList = function () {
         $http({
             method: "POST",
-            url: "Home/GetCategoryList",
+            url: "/Home/GetCategoryList",
         }).then(function (d) {
             $scope.CategoryList = d.data;
         });
@@ -30,7 +30,7 @@ app.controller("homeController", function ($scope, $http) {
     $scope.GetArticleList = function () {
         $http({
             method: "POST",
-            url: "Home/GetArticleList",
+            url: "/Home/GetArticleList",
         }).then(function (d) {
             $scope.ArticleList = d.data;
         });

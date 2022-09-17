@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container" >
+    <div class="row " ng-app="userapp" ng-controller="userController">
+        <div class="col-8">
+            <h3>Yeni Kullanıcı Ekle</h3>
+            <div class="form-group">
+                <label>Lütfen Adınızı Giriniz:</label>
+                <input class="form-control" ng-model="User.Name"/>
+            </div>
+            <div class="form-group">
+                <label>Lütfen Soyadınızı Giriniz:</label>
+                <input class="form-control" ng-model="User.Surname" />
+            </div>
+            <div class="form-group">
+                <label>Lütfen Bir Rol Seçiniz</label>
+                <select class="form-control" ng-model="User.UserRoleId">
+                    <option value="0">Seçiniz</option>
+                    <option ng-repeat="role in UserRoleList" ng-value="{{role.id}}">{{role.title}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Lütfen E-Mail Adresinizi Giriniz:</label>
+                <input class="form-control" ng-model="User.EMail" />
+            </div>
+            <div class="form-group">
+                <label>Lütfen Şifrenizi Giriniz:</label>
+                <input class="form-control" ng-model="User.Password" />
+            </div>
+            <div class="form-group">
+                <button ng-click="AddUser()" class="btn btn-primary">Kaydet</button>
+            </div>
+
+
+        </div>
+        <div class="col-4">
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/js/pages/user.js"></script>
+}

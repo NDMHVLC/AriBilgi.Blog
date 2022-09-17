@@ -10,8 +10,8 @@ namespace AriBilgi.Blog.Shared.Entities.Abstract
     {
         public int Id { get; set; }
 
-        public int? CreatedBy { get; set; }
-        public DateTime? CreatedDate { get; set; }
+        public int? CreatedBy { get; set; } = 1;
+        public DateTime? CreatedDate { get; set; } = DateTime.Now;
 
         public int? ModifedBy { get; set; }
         public DateTime? ModifedDate { get; set; }

@@ -17,7 +17,7 @@ namespace AriBilgi.Blog.Mvc.Controllers
             _unitOfWork = unitOfWork;
         }
 
-       
+
 
         public IActionResult Index()
         {
@@ -36,9 +36,9 @@ namespace AriBilgi.Blog.Mvc.Controllers
                 {
                     Id = user.Id,
                     NameSurname = user.Name + " " + user.Surname,
-                    ArticleCount = _unitOfWork.Articles.Count(x=>x.UserId==user.Id),
-                    CommentCount = _unitOfWork.Comments.Count(x=>x.UserId==user.Id),
-                    Role=_unitOfWork.UserRoles.Get(x=>x.Id == user.UserRoleId).Title
+                    ArticleCount = _unitOfWork.Articles.Count(x => x.UserId == user.Id),
+                    CommentCount = _unitOfWork.Comments.Count(x => x.UserId == user.Id),
+                    Role = _unitOfWork.UserRoles.Get(x => x.Id == user.UserRoleId).Title
                 });
             }
             userList = null;
@@ -55,18 +55,32 @@ namespace AriBilgi.Blog.Mvc.Controllers
             {
                 categoryDTOList.Add(new CategoryDTO
                 {
-                    Id =category.Id,
+                    Id = category.Id,
                     Name = category.Title,
-                    ArticleCount = _unitOfWork.Articles.Count(x=>x.CategoryId== category.Id),
+                    ArticleCount = _unitOfWork.Articles.Count(x => x.CategoryId == category.Id),
                 });
             };
             categoryList = null;
             return categoryDTOList;
         }
         [HttpPost]
-        public List<Article> GetArticleList()
+        public List<ArticleDTO> GetArticleList()
         {
-            return _unitOfWork.Articles.GetAll();
+            List<Article> articleList = _unitOfWork.Articles.GetAll();
+            List<ArticleDTO> articleDTOList = new List<ArticleDTO>();
+
+            foreach (Article article in articleList)
+            {
+                articleDTOList.Add(new ArticleDTO
+                {
+                    Id = article.Id,
+                    Title = article.Title,
+                    CategoryName = _unitOfWork.Categories.Get(x=>x.Id == article.CategoryId).Title,
+                    CommentCount = _unitOfWork.Comments.Count(x => x.ArticleId == article.Id),
+                });
+            }
+            articleList = null;
+            return articleDTOList;
         }
         #endregion
     }
